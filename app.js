@@ -1,11 +1,15 @@
 // All required modules
 const express = require('express');
 const bodyParser = require('body-parser');
+const expressLayouts = require('express-ejs-layouts');
+
 // setting up the port number
 const port = 8000;
 // Creating or firing the application
 const app = express();
 
+
+app.use(expressLayouts);
 // use express router
 app.use('/', require('./routes'));
 app.use(bodyParser());

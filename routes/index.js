@@ -8,7 +8,7 @@ const homeController = require('../controller/home_controller');
 
 // route to access the home controller
 router.get('/', homeController.home);
-router.post('/add-task', homeController.task);
+// router.post('/add-task', homeController.task); temporary commenting out
 
 // Route to user routes
 router.use('/user', require('./user_route'));
